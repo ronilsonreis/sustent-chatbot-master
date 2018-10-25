@@ -1,23 +1,25 @@
 {
-  "name": "garoa-chatbot",
+  "name": "sustent_chat_bot",
   "version": "1.0.0",
-  "description": "Utils bot for garoa",
+  "description": "Bot da sustentacao",
   "main": "index.js",
   "scripts": {
-    "start": "node bin/start",
-    "start:debug": "nodemon bin/start"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Rogério Munhoz (@rjmunhoz)",
-  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ronilsonreis/sustent-chatbot-master.git"
+  },
+  "keywords": [
+    "chatbot"
+  ],
+  "author": "Ronilson Reis (@ronilsonreis)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ronilsonreis/sustent-chatbot-master/issues"
+  },
+  "homepage": "https://github.com/ronilsonreis/sustent-chatbot-master#readme",
   "dependencies": {
-    "axios": "^0.17.1",
-    "lodash.sample": "^4.2.1",
-    "moment": "^2.20.1",
-    "mongoose": "^4.13.9",
-    "node-emoji": "^1.8.1",
-    "node-telegram-bot-api": "^0.30.0"
-  },
-  "devDependencies": {
-    "nodemon": "^1.17.5"
+    "telegram-node-bot": "^4.0.5"
   }
 }
