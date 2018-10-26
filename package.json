@@ -4,10 +4,7 @@
   "description": "Bot da sustentacao",
   "main": "app.js",
   "start":"node app.js",
-  "scripts": {
-    "start": "node app.js"
-  },
-    "repository": {
+  "repository": {
     "type": "git",
     "url": "git+https://github.com/ronilsonreis/sustent-chatbot-master.git"
   },
