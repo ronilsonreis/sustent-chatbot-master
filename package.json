@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Bot da sustentacao",
   "main": "index.js",
+  "start":"node index",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -21,7 +22,6 @@
   "homepage": "https://github.com/ronilsonreis/sustent-chatbot-master#readme",
   "dependencies": {
     "telegram-node-bot": "^4.0.5"
-  },
-  
-  "start":"node index"
+  }
+    
 }
