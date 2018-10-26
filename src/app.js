@@ -11,7 +11,7 @@ class EventsController extends TelegramBaseController {
     }
   get routes() {
       return {
-        'allEvents': 'allEventsAction'
+        'allevents': 'allEventsAction'
       }
     }
   }
