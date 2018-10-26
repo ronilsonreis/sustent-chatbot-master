@@ -11,7 +11,7 @@ class EventsController extends TelegramBaseController {
     }
   get routes() {
       return {
-        'allevents': 'allEventsAction'
+        'allEvents':'allEventsAction'
       }
     }
   }
@@ -19,5 +19,6 @@ class EventsController extends TelegramBaseController {
          .when(
            new TextCommand('/allevents', 'allEvents'), new EventsController()
          )
+         
 
          
