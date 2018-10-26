@@ -1,6 +1,7 @@
 {
   "name": "sustent-chatbot-master",
   "scripts": {
+    "start":"node app.js"
   },
   "env": {
   },
