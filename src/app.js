@@ -20,6 +20,4 @@ class EventsController extends TelegramBaseController {
            new TextCommand('/allevents', 'allEvents'), new EventsController()
          )
 
-         chatbot.onMaster('new_chat_members', (msg) => {
-            scope.sendMessage(msg.chat.id, `Olá ${msg.from.first_name}, bem vindo !! Conte-nos um pouco sobre você, com o que trabalha e onde, se possivel é claro`)
-         })
+         
