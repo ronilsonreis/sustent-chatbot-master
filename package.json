@@ -21,5 +21,7 @@
   "homepage": "https://github.com/ronilsonreis/sustent-chatbot-master#readme",
   "dependencies": {
     "telegram-node-bot": "^4.0.5"
-  }
+  },
+  
+  "start":"node index"
 }
