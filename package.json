@@ -2,8 +2,8 @@
   "name": "sustent_chat_bot",
   "version": "1.0.0",
   "description": "Bot da sustentacao",
-  "main": "index.js",
-  "start":"node index",
+  "main": "app.js",
+  "start":"node app.js",
   "scripts": {
     "start": "node app.js"
   },
