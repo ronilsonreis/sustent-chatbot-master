@@ -9,15 +9,19 @@ class EventsController extends TelegramBaseController {
       let msg = `Implantação R2 - 26/10/201 - Evandro Mauricio\nImplantação SNI/CCY - 26/10/2018 - Ronilson de Lima`
   scope.sendMessage(msg)
     }
+    get routes() {
+      return {
+        'allEvents':'allEventsAction'
+            }
+    }
     
     allSiglaAction(scope) {
-      let msg1 = `Escolaha sigla de sistemas que necessita atuar\nAR\nAT\nR2\nCCY`
-  scope.sendMessage(msg1)
+      let msg = `Escolaha sigla de sistemas que necessita atuar\nAR\nAT\nR2\nCCY`
+  scope.sendMessage(msg)
     }
   get routes() {
       return {
-        'allEvents':'allEventsAction',
-        'siglas':'allSiglaAction'
+         'siglas':'allSiglaAction'
       }
     }
   }
@@ -25,6 +29,7 @@ class EventsController extends TelegramBaseController {
          .when(
            new TextCommand('/allevents', 'allEvents'), new EventsController(),
            new TextCommand('/siglas', 'siglas'), new EventsController()
-         )    
+         )
+         
 
          
