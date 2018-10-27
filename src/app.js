@@ -9,6 +9,7 @@ class EventsController extends TelegramBaseController {
       let msg = `Implantação R2 - 26/10/201 - Evandro Mauricio\nImplantação SNI/CCY - 26/10/2018 - Ronilson de Lima`
   scope.sendMessage(msg)
     }
+    
     allSiglaAction(scope) {
       let msg = `Escolaha sigla de sistemas que necessita atuar\nAR\nAT\nR2\nCCY`
   scope.sendMessage(msg)
@@ -22,7 +23,8 @@ class EventsController extends TelegramBaseController {
   }
   chatbot.router
          .when(
-           new TextCommand('/allevents', 'allEvents'), new EventsController()
-         )    
+           new TextCommand('/allevents', 'allEvents'), new EventsController(),
+           new TextCommand('/siglas', 'siglas'), new EventsController()
+         )   
 
          
