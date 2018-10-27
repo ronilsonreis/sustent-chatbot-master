@@ -11,8 +11,8 @@ class EventsController extends TelegramBaseController {
     }
     
     allSiglaAction(scope) {
-      let msg = `Escolaha sigla de sistemas que necessita atuar\nAR\nAT\nR2\nCCY`
-  scope.sendMessage(msg)
+      let msg1 = `Escolaha sigla de sistemas que necessita atuar\nAR\nAT\nR2\nCCY`
+  scope.sendMessage(msg1)
     }
   get routes() {
       return {
@@ -25,6 +25,6 @@ class EventsController extends TelegramBaseController {
          .when(
            new TextCommand('/allevents', 'allEvents'), new EventsController(),
            new TextCommand('/siglas', 'siglas'), new EventsController()
-         )   
+         )    
 
          
