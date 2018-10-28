@@ -28,7 +28,7 @@ class EventsController extends TelegramBaseController {
   chatbot.router
          .when(
            new TextCommand('/allevents', 'allEvents'), new EventsController(),
-           new TextCommand('/siglas', 'siglas'), new EventsController()
+           
          )
          
 
