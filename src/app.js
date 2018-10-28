@@ -14,22 +14,12 @@ class EventsController extends TelegramBaseController {
         'allEvents':'allEventsAction'
             }
     }
-    
-    allSiglaAction(scope) {
-      let msg = `Escolaha sigla de sistemas que necessita atuar\nAR\nAT\nR2\nCCY`
-  scope.sendMessage(msg)
-    }
-  get routes() {
-      return {
-         'siglas':'allSiglaAction'
-      }
-    }
+     
   }
   chatbot.router
          .when(
            new TextCommand('/allevents', 'allEvents'), new EventsController(),
-           
-         )
+             )
          
 
          
